@@ -16,14 +16,6 @@ php:
         pecl channel-update pecl.php.net
         pecl install pcov
       fi
-    - |
-      if [[ $TRAVIS_PHP_VERSION != 'nightly' ]]; then
-        phpenv config-rm xdebug.ini
-        echo 'extension = memcached.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        echo 'extension = redis.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        echo 'extension = apcu.so' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-        echo 'apc.enable_cli = 1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-      fi
     - sudo locale-gen en_GB.UTF-8
 
 install:
@@ -43,7 +35,7 @@ script:
       vendor/bin/phpunit
     fi
 after_success:
-  - if [[ $TRAVIS_PHP_VERSION == '7.4' ]]; then bash <(curl -s https://codecov.io/bash) -t "fe7c1414-f9d8-4387-b224-27c2d5c65edb"; fi
+  - if [[ $TRAVIS_PHP_VERSION == '7.4' ]]; then bash <(curl -s https://codecov.io/bash); fi
 
 notifications:
   email: false
