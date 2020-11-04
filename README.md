@@ -1,7 +1,8 @@
 # hello world program
 
-[![Build Status](https://travis-ci.com/think-ai/ci.mw.api.atlmoneytransfer.com.svg?token=apeyVqQNSWhdR7sdH8hP&branch=main)](https://travis-ci.com/think-ai/ci.mw.api.atlmoneytransfer.com)
-[![codecov](https://codecov.io/gh/think-ai/ci.mw.api.atlmoneytransfer.com/branch/main/graph/badge.svg?token=MFO3U0BKL1)](https://codecov.io/gh/think-ai/ci.mw.api.atlmoneytransfer.com)
+[![Build Status](https://travis-ci.org/gourab1osolutions/Hello.svg?branch=main)](https://travis-ci.org/gourab1osolutions/Hello)
+[![codecov](https://codecov.io/gh/gourab1osolutions/Hello/branch/main/graph/badge.svg?token=XO8TC0QFXG)](https://codecov.io/gh/gourab1osolutions/Hello)
+
 
 
 
